@@ -14,7 +14,7 @@ public class Test02_GET {
 			statusCode(200).
 			body("data.id[1]", equalTo(8)).
 			body("data.first_name", hasItems("Michael", "Lindsay")).
-			log().all();
+			log().body();
 	}
 
 }

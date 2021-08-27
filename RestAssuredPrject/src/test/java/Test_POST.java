@@ -2,6 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.json.simple.JSONObject;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
 
@@ -30,7 +31,7 @@ public class Test_POST {
 		then().
 		statusCode(201);
 	}
-	//@Test
+	@Test
 	public void test_2_put() {
 
 
@@ -70,7 +71,7 @@ public class Test_POST {
 		log().all();
 	}
 	
-	@Test
+	//@Test
 	public void test_4_delete() {
 
 
